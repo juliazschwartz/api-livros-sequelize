@@ -1,0 +1,8 @@
+<!-- views/home.handlebars -->
+<h1>Livros Lidos</h1>
+<a href="/livros/novo">Adicionar Novo Livro</a>
+<ul>
+    {{#each livros}}
+    <li>{{this.titulo}} - {{this.autor}} ({{this.ano}})</li>
+    {{/each}}
+</ul>
